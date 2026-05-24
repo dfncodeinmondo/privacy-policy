@@ -1,4 +1,3 @@
-
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
   .pp-root { font-family: 'DM Sans', sans-serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; color: #E2E8F0; background: #0D0D0D; min-height: 100vh; }
@@ -21,28 +20,37 @@
   <div class="pp-header">
     <p class="pp-name">// privacy policy</p>
     <h1 class="pp-title">Hobbyist Developer — Privacy Policy</h1>
-    <p class="pp-meta"><span class="pp-tag">personal project</span><span class="pp-tag">no ads</span><span class="pp-tag">no tracking</span>Last updated: May 2025</p>
+    <p class="pp-meta"><span class="pp-tag">personal project</span><span class="pp-tag">no ads</span><span class="pp-tag">no tracking</span>Last updated: May 24, 2026</p>
   </div>
 
   <div class="pp-section">
     <div class="pp-section-title"><span class="pp-dot"></span>Who I am</div>
-    <p class="pp-text">I'm an independent hobbyist developer who builds web and mobile applications in my spare time. These are personal, non-commercial projects created for learning and exploration — not backed by a company or organization.</p>
+    <p class="pp-text">I'm an independent hobbyist developer who builds web and mobile applications in my spare time. These are personal projects created for learning and exploration — not backed by a company or organization.</p>
   </div>
 
   <div class="pp-section">
     <div class="pp-section-title"><span class="pp-dot"></span>What data I collect</div>
-    <p class="pp-text">My apps are designed to work with minimal or no data collection. I do not intentionally collect personal information such as your name, email address, or location unless explicitly required for a specific feature you opt into.</p>
-    <p class="pp-text">Some apps may store data locally on your device (e.g. app preferences or saved content). This data never leaves your device and is not transmitted to any server.</p>
+    <p class="pp-text">My apps are designed to work with minimal data collection. I do not intentionally collect personal information such as your name, email address, or location.</p>
+    <p class="pp-text">Most apps store data locally on your device only (e.g., app preferences, paired devices, macros, keyboard layouts). This data never leaves your device. <strong>Apps that offer paid subscriptions are the only exception</strong> — see the next section.</p>
   </div>
 
   <div class="pp-section">
-    <div class="pp-section-title"><span class="pp-dot"></span>Third-party services</div>
-    <p class="pp-text">Some apps may use third-party services such as Google Play Services or Firebase, which have their own privacy policies. These services may collect certain anonymous usage data as per their own terms.</p>
+    <div class="pp-section-title"><span class="pp-dot"></span>Subscription apps (e.g., Bluetooth Mouse, Keyboard & Macro)</div>
+    <p class="pp-text">When you subscribe to a paid feature, two third parties are involved in processing the transaction:</p>
+    <p class="pp-text"><strong>Google Play Billing</strong> handles the actual payment. Your purchase data (account, billing info, payment method) stays with Google under their own privacy policy. I never see your payment details.</p>
+    <p class="pp-text"><strong>RevenueCat</strong> is used to verify your subscription status and sync entitlements across reinstalls. RevenueCat receives an <strong>anonymous device identifier</strong> (a randomly generated UUID — not your name, email, or any personal info) plus transaction events forwarded from Google. This is the minimum data needed to confirm "this device has an active subscription." RevenueCat's own privacy policy is at <strong>https://www.revenuecat.com/privacy</strong>.</p>
+    <p class="pp-text">Bluetooth device data, keyboard inputs, mouse movements, macro contents, and pairing information <strong>never leave your device</strong> — these are processed locally by the Bluetooth HID stack and stored only on your device.</p>
+  </div>
+
+  <div class="pp-section">
+    <div class="pp-section-title"><span class="pp-dot"></span>Your right to delete subscription data</div>
+    <p class="pp-text">Inside the app you can reset your local anonymous subscription identifier at any time (<strong>Settings → Subscription → "Reset my subscription data"</strong>). This regenerates a new anonymous UUID, decoupling the device from any prior subscription records. A 24-hour cooldown prevents repeated resets.</p>
+    <p class="pp-text">For full removal of the historical anonymous record from RevenueCat's servers (GDPR / KVKK Right to be Forgotten), email me at the address below — I can submit a deletion request to RevenueCat on your behalf.</p>
   </div>
 
   <div class="pp-section">
     <div class="pp-section-title"><span class="pp-dot"></span>Ads & tracking</div>
-    <p class="pp-text">I do not run advertisements in my hobby apps. I do not use tracking pixels, analytics SDKs, or behavioral tracking tools. Your usage is your own business.</p>
+    <p class="pp-text">I do not run advertisements. I do not use tracking pixels, analytics SDKs, or behavioral tracking tools. Your usage is your own business.</p>
   </div>
 
   <div class="pp-section">
@@ -61,6 +69,6 @@
   </div>
 
   <div class="pp-footer">
-    &copy; 2025 · Independent Hobbyist Developer · All rights reserved
+    &copy; 2026 · Independent Hobbyist Developer · All rights reserved
   </div>
 </div>
